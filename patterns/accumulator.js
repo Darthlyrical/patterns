@@ -54,7 +54,8 @@ export function buildNArray(n) {
  */
 export function getLongestString(strings) {
   // TODO
-  let winner = strings[0]
+  if (strings.length === 0) return '';
+  let winner = strings[0];
   for (let i = 1; i < strings.length; i++) {
     if (strings[i].length > winner.length) {
       winner = strings[i];
